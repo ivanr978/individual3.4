@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Market</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <h1>Gastronomía Market - Proveedores</h1>
+
+    <!-- Formulario para añadir un nuevo proveedor -->
+    <form id="proveedorForm">
+        <h2>Agregar Nuevo Proveedor</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="articulo">Artículo:</label>
+        <input type="text" id="articulo" name="articulo" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" required>
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+
+        <label for="tipo">Tipo de Proveedor:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="nacional">Nacional</option>
+            <option value="internacional">Internacional</option>
+        </select>
+
+        <button type="submit">Agregar Proveedor</button>
+    </form>
+
+    <!-- Tabla para mostrar los proveedores -->
+    <h2>Lista de Proveedores</h2>
+    <table id="proveedoresTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Artículo</th>
+                <th>Precio</th>
+                <th>Información del Proveedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán dinámicamente aquí -->
+        </tbody>
+    </table>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
